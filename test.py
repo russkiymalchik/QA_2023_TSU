@@ -14,22 +14,20 @@ class SolutionTests(unittest.TestCase):
                       ['S', 'F', 'C', 'S'],
                       ['A', 'D', 'E', 'E']]
 
-    def test_exist_returns_true_for_existing_word(self):
-        word = 'ABCCED'
-        result = self.solution.exist(self.board, word)
+    def test_find_existing_word(self):
+        result = self.solution.exist(self.board, 'ABCCED')
         print("Run1")
         self.assertTrue(result)
 
-    def test_exist_returns_false_for_non_existing_word(self):
-        word = 'ABCB'
-        result = self.solution.exist(self.board, word)
+    def test_find_non_existing_word(self):
+        result = self.solution.exist(self.board, 'ABCB')
         print("Run2")
         self.assertFalse(result)
 
-    def test_exist_returns_false_for_empty_board(self):
+    def test_empty_board(self):
         board = []
-        word = 'ABCCED'
-        result = self.solution.exist(board, word)
+
+        result = self.solution.exist(board, 'ABCCED')
         print("Run3")
         self.assertFalse(result)
 
