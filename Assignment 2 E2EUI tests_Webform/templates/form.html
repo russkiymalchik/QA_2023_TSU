@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Form</title>
+</head>
+<body>
+    <h1>Enter a 3x4 Matrix</h1>
+    <form method="POST">
+        <table>
+            {% for i in range(3) %}
+                <tr>
+                    {% for j in range(4) %}
+                        <td>
+                            <input type="text" name="matrix[{{ i }}][{{ j }}]" required>
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h1>Enter a word</h1>
+        <input type="text" name="word" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

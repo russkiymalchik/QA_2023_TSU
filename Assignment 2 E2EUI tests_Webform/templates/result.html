@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Result</title>
+</head>
+<body>
+    <h1>Entered Matrix:</h1>
+    <table id="matrix_table">
+        {% for row in matrix %}
+            <tr id="{{ row }}">
+                {% for value in row %}
+                    <td name="matrix[{{ row }}][{{ value }}]">{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h1>Result:</h1>
+    <p id="keyword">Keyword : {{ word_res }}</p>
+    <p id="res">Result : {{ result_res }}</p>
+</body>
+</html>
