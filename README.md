@@ -37,7 +37,9 @@ Obviously, the solution turn out false if there is no word found in the board ba
 the last but not least, there is neither ```True``` nor ```false```. the test on an empty board(```test_empty_board```) give us an error. This is happened due to the absence of board inputs from its user. This directly translated to that the board inputs is necessary for the ongoing program.
 
 ## UI Test
-In this section of the assignment, I demonstrate how to conduct an automated UI test using Selenium. By leveraging Selenium's powerful capabilities, I create a script that simulates user interactions with the web application's graphical user interface. This allows for the efficient testing of various UI elements, ensuring that the application is functioning properly and meeting the desired user experience requirements.<img src="https://github.com/russkiymalchik/QA_2023_TSU/assets/73766131/11955af1-a6a1-4fee-ab25-7e38dc2bbc25" width="300" height="314" />
+In this section of the assignment, I demonstrate how to conduct an automated UI test using Selenium. By leveraging Selenium's powerful capabilities, I create a script that simulates user interactions with the web application's graphical user interface. This allows for the efficient testing of various UI elements, ensuring that the application is functioning properly and meeting the desired user experience requirements.
+
+<img src="https://github.com/russkiymalchik/QA_2023_TSU/assets/73766131/11955af1-a6a1-4fee-ab25-7e38dc2bbc25" width="300" height="314" />
 </br>
 
 First start, configuring WebDriver properties in Selenium is an essential step in automating web browsers. It involves specifying the browser type, its location, and other settings to create a WebDriver instance that can interact with the browser. This enables users to perform automated testing tasks efficiently.
